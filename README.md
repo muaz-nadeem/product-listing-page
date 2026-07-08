@@ -1,6 +1,4 @@
-# Haven Furniture — Product Listing Page
-
-A clean, responsive furniture store listing page built with Next.js (App Router), TypeScript, and Tailwind CSS.
+# Product Listing Page
 
 ## Getting Started
 
