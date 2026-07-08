@@ -41,9 +41,8 @@ export const PRODUCTS: Product[] = [
     price: 180,
     category: "Bedroom",
     rating: 4.3,
-    // Original dataset URL 404s on Unsplash; swapped for a working equivalent
     image_url:
-      "https://images.unsplash.com/photo-1616627561950-9f746e330187?w=500&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1499933374294-4584851497cc?w=500&auto=format&fit=crop&q=60",
   },
   {
     id: 5,
