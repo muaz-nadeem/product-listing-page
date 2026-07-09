@@ -16,7 +16,7 @@ interface ProductBrowserProps {
 
 export function ProductBrowser({ products }: ProductBrowserProps) {
   const [category, setCategory] = useState<Category>("All");
-  const [sort, setSort] = useState<SortOption>("featured");
+  const [sort, setSort] = useState<SortOption>("price-asc");
 
   const visibleProducts = useMemo(() => {
     const filtered =
@@ -31,8 +31,6 @@ export function ProductBrowser({ products }: ProductBrowserProps) {
         return filtered.sort((a, b) => b.price - a.price);
       case "rating-desc":
         return filtered.sort((a, b) => b.rating - a.rating);
-      default:
-        return filtered;
     }
   }, [products, category, sort]);
 
